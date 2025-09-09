@@ -1,1 +1,65 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blacket Legacy</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #222; color: #fff; }
+        header { padding: 20px; text-align: center; background: #333; }
+        nav { margin: 20px 0; text-align: center; }
+        nav a { color: #ff003cff; margin: 0 10px; text-decoration: none; }
+        main { padding: 20px; }
+        .card { background: #444; padding: 15px; margin: 10px 0; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blacket Legacy</h1>
+        <p>by Xotic (fan remake) All credits go to Xotic, made by javascript fullstack</p>
+    </header>
+    <nav>
+        <a href="#">Shop</a>
+        <a href="#">Market</a>
+        <a href="#">Inventory</a>
+        <a href="#">Profile</a>
+    </nav>
+    <main>
+        <div class="card">
+            <h2>Welcome!</h2>
+            <p>This is a legacy remake of Blacket by Xotic. Made by JavaScript FullStack Credts to Xotic Choose a section above to get started.</p>
+        </div>
+        <!-- Add more legacy features here -->
+    </main>
+</body>
+</html>
+--------------------------------------------------
+    <main>
+        <div class="card">
+            <h2>Welcome!</h2>
+            <p>This is a legacy remake of Blacket by Xotic. Made by JavaScript FullStack Credts to Xotic Choose a section above to get started.</p>
+        </div>
+        <!-- Like/Dislike System -->
+        <div class="card" style="text-align:center;">
+            <h2>Do you like Blacket Legacy?</h2>
+            <button id="likeBtn" style="background:#2196f3;color:#fff;border:none;padding:10px 20px;border-radius:6px;cursor:pointer;font-weight:bold;">
+                👍 Like <span id="likeCount">0</span>
+            </button>
+            <button id="dislikeBtn" style="background:#e8491d;color:#fff;border:none;padding:10px 20px;border-radius:6px;cursor:pointer;font-weight:bold;margin-left:10px;">
+                👎 Dislike <span id="dislikeCount">0</span>
+            </button>
+        </div>
+        <!-- Add more legacy features here -->
+        <script>
+            let likeCount = 0;
+            let dislikeCount = 0;
+            document.getElementById('likeBtn').onclick = function() {
+                likeCount++;
+                document.getElementById('likeCount').textContent = likeCount;
+            };
+            document.getElementById('dislikeBtn').onclick = function() {
+                dislikeCount++;
+                document.getElementById('dislikeCount').textContent = dislikeCount;
+            };
+        </script>
+    </main> public_html www
+    localStorage.setItem('isAdmin', 'true');
